@@ -77,5 +77,10 @@ app.use((error, req, res) => {
     res.render('error');
 });
 
+const http = require('http');
+const server = http.Server(app);
 
-app.listen(process.env.PUERTO);
+server.listen(process.env.PUERTO, function () {
+    console.log('app running');
+});
+
