@@ -77,10 +77,11 @@ app.use((error, req, res) => {
     res.render('error');
 });
 
+const PORT = process.env.PUERTO || 3000;
 const http = require('http');
 const server = http.Server(app);
 
-server.listen(process.env.PUERTO, function () {
+server.listen(PORT, function () {
     console.log('app running');
 });
 
