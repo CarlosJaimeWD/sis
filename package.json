@@ -1,7 +1,7 @@
 {
-  "name": "devjobs",
+  "name": "sis",
   "version": "1.0.0",
-  "description": "Portal DevJobs con NodeJS, Handlebars Mongoose",
+  "description": "App de vacantes para unedl",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon ./index",
@@ -9,7 +9,7 @@
     "start": "node ./index.js",
     "watch": "webpack --w --mode development"
   },
-  "author": "Juan De la torre",
+  "author": "Carlos Jaime",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.0",
