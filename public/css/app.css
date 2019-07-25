@@ -6,9 +6,19 @@ html {
     box-sizing: inherit;
 }
 body {
-    background-color: #100E17;
+    background-color: darkcyan;
     font-family: 'Rubik', sans-serif;
     font-size: 1.6rem;
+    padding: 0;
+    margin: 0;
+}
+#footer {
+    position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
 }
 p {
     font-size: 1.6rem;
@@ -47,22 +57,24 @@ h3 {
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     transition: background-color .3s ease-out;
     display: block;
     border:none;
 }
+
 .btn-verde {
-    background-color: #00C897;
+    background-color: rgb(205, 92, 92);
 }
 .btn-verde:hover {
-    background-color: rgb(10, 155, 119);
+    background-color: rgb(148, 44, 44);
 }
 
 .btn-azul {
-    background-color: #00A4B6;
+    background-color: #333;
 }
 .btn-azul:hover {
-    background-color: rgb(3, 133, 148);
+    background-color: rgb(0,0,0);
 }
 
 .btn-amarillo {
@@ -89,7 +101,6 @@ h3 {
 
 
 .site-header {
-    min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,6 +111,7 @@ h3 {
 .nombre-sitio {
     display: flex;
     justify-content: space-between;
+    padding-top: 15px;
 }
 .nombre-sitio a {
     color: white;
@@ -182,10 +194,16 @@ h3 {
 .caja .puesto,
 .caja .etiqueta {
     font-weight: 700;
-    color: #616065;
+    color: #fff;
     font-size: 2.6rem;
     margin: 0;
     text-align: left;
+}
+.etiqueta {
+    color: #333 !important; 
+}
+.etiqueta2{
+    color: #333 !important; 
 }
 .caja .etiqueta {
     margin:1rem 0 0 0;
@@ -210,7 +228,7 @@ h3 {
 }
 
 .vacante-contenedor h2 {
-    color: #616065;
+    color: #333;
     font-size: 2.4rem;
 }
 .contenido-superior {
@@ -264,7 +282,7 @@ h3 {
     margin: 4rem  auto 0 auto; 
 }
 .default-form h3 {
-    color: #616065;
+    color: #333;
     font-size: 2.4rem;
     margin-bottom: 3rem;
     text-transform: uppercase;
@@ -353,7 +371,7 @@ trix-toolbar .trix-button--icon-strike {
     flex-wrap: wrap;
 }
 .lista-conocimientos  li {
-    border: 2px solid #00C897;
+    border: 2px solid springgreen;
     margin-bottom: 2rem;
     text-transform: uppercase;
     font-weight: 700;
@@ -367,7 +385,7 @@ trix-toolbar .trix-button--icon-strike {
     justify-content: center;
 }
 .lista-conocimientos  li.activo {
-    background-color: #00C897;
+    background-color: springgreen;
 }
 .lista-conocimientos  li:hover {
     cursor: pointer;
@@ -402,19 +420,21 @@ p.candidatos {
     color: #616065;
 }
 .admin-perfil {
-    width: 120px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
     align-self: flex-start;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
 }
 .cerrar-sesion p, 
 .cerrar-sesion a {
     margin:  0 2rem 0 0 ;
-    color: #888;
+    color: #f1f1f1;
 }
 .cerrar-sesion {
-    margin-top: 2rem;
     color: white;
     display: flex;
+    align-items: center;
 }
 .cerrar-sesion img {
         width: 80px;
